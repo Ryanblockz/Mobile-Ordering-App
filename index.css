@@ -97,8 +97,8 @@ h2 {
     text-align: center;
     flex-direction: column;
     max-width: 700px;
-    width: 100%;
-
+    width: 90%;
+    margin: auto;
 }
 
 .hellobox {
@@ -113,8 +113,6 @@ h2 {
 .hidden {
     display: none !important;
 }
-
-
 
 .orderContainer {
     margin: 0 auto;
