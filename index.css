@@ -18,11 +18,13 @@ h2 {
     display: flex;
     justify-content: center;
     width: 100%;
-    max-width: 700px;
+    max-width: 1100px;
 }
 
 .header-image {
     width: 100%;
+    margin: auto;
+    max-width: 700px;
 }
 
 .menu-items-container {
@@ -183,12 +185,12 @@ h2 {
     cursor: pointer;
 }
 
+
 .modal {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 0.4rem;
-    width: 450px;
     padding: 1.3rem;
     min-height: 250px;
     max-height: 300px;
@@ -205,6 +207,8 @@ h2 {
     margin: auto;
     z-index: 1;
     padding-bottom: 40px;
+    width: 80%;
+    max-width: 450px;
 }
 
 
@@ -241,13 +245,13 @@ button {
     background-color: red;
 }
 
-.btn-close {
+/* .btn-close {
     transform: translate(425px, -20px);
     padding: 0.5rem 0.7rem;
     background: #eee;
     border-radius: 50%;
     margin-top: 30px;
-}
+} */
 
 .modal-header {
     text-align: center;
