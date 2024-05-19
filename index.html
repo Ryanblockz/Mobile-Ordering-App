@@ -7,60 +7,36 @@
 </head>
 
 <body>
-    <script src="index.js"></script>
+    <div class="app-container">
+        <div class="header"><img class="header-image" src="images\burgar.jpg" alt="darkmatter" /></div>
+    </div>
+    <div id="appContainer"></div>
+    <div id="order-box" class="order-container hidden">
+        <h1>Your Order</h1>
+        <div id="order-container" class="orderContainer hidden">
+        </div>
+        <div class="total-price-container">
+            <div>Total Price:</div>
+            <div id="total-price">$</div>
+        </div>
+        <button id="complete-order-button" class="order-button">Complete Order</button>
+    </div>
+
+    <section id="pay-modal" class="modal hidden">
+        <div class="flex">
+            <button id="close-pay-modal" class="btn-close">⨉</button>
+        </div>
+        <div class="modal-header">
+            <h3>Enter card details</h3>
+        </div>
+        <input id="name" class="required" required placeholder="Name" />
+        <input class="required" required placeholder="Card number" />
+        <input class="required" required placeholder="CVV" />
+        <button for="name" id="payBtn" class="pay-btn">Pay</button>
+    </section>
+
+    <div id="blur-overlay" class="overlay hidden"></div>
+    <script src="index.js" type="module"></script>
 </body>
-<div class="app-container">
-    <div class="header"><img class="header-image" src="images\burgar.jpg" alt="darkmatter" /></div>
-</div>
-<div class="menu-items-container">
-    <div class="menuItems">
-        <img class="pizzaIcon" src="images\pisha.png">
-
-        <div class="item-description">
-            <h2>Pizza</h2>
-            <p>Ham, mozzarella, pineapple</p>
-            <p class="price">$14</p>
-        </div>
-    </div>
-    <div>
-        <button class="add-to-cart-btn" type="button">+</button>
-    </div>
-</div>
-<div class="menu-items-container">
-    <div class="menuItems">
-        <img class="burgerIcon" src="images\borgor.jpg">
-
-        <div class="item-description">
-            <h2>Burger</h2>
-            <p>beef, cheese, lettuce</p>
-            <p class="price">$14</p>
-        </div>
-    </div>
-    <div>
-        <button class="add-to-cart-btn" type="button">+</button>
-    </div>
-</div>
-<div class="menu-items-container">
-    <div class="menuItems">
-        <img class="beerIcon" src="images\beer.jpeg">
-
-        <div class="item-description">
-            <h2>Beer</h2>
-            <p>grain, hops, yeast, water</p>
-            <p class="price">$14</p>
-        </div>
-    </div>
-    <div>
-        <button class="add-to-cart-btn" type="button">+</button>
-    </div>
-</div>
-<div class="your-order-container">
-    <H2>Your Order</H2>
-    <div class="order-items-container">
-        <div class="ordered-item"><label>Pizza</label><button>remove</button></div>
-        <div class="ordered-item"><label>Beer</label><button>remove</button></div>
-
-    </div>
-</div>
 
 </html>
